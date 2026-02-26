@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HERIO Marketing Digital y Publicidad</title>
+
+<!-- Preload Google Fonts -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{background:#0b0b0b;color:#fff;overflow-x:hidden;opacity:0;transition:opacity 0.5s ease;}
+nav{width:100%;padding:15px 5%;background:#111;display:flex;justify-content:space-between;align-items:center;position:fixed;top:0;z-index:1000;}
+nav h2{font-weight:700;background: linear-gradient(90deg,#d4af37,#f1c40f);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+nav .menu{display:flex;gap:20px;font-size:0.9rem;}
+nav a{color:#fff;font-weight:500;text-decoration:none;position:relative;overflow:hidden;}
+nav a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background:#d4af37;transform:scaleX(0);transition:transform 0.3s ease;transform-origin:right;}
+nav a:hover::after{transform:scaleX(1);transform-origin:left;}
+.hamburger{display:none;flex-direction:column;cursor:pointer;gap:4px;}
+.hamburger div{width:22px;height:3px;background:#fff;border-radius:2px;}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:space-between;padding:120px 5% 60px 5%;gap:40px;flex-wrap:wrap;}
+.hero-text{flex:1;min-width:260px;}
+.hero-text h1{font-size:2.5rem;line-height:1.2;margin-bottom:15px;display:flex;flex-wrap:wrap;}
+.hero-text h1 span{background: linear-gradient(90deg,#d4af37,#f1c40f);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+.hero-text p{color:#ccc;font-size:1rem;margin-bottom:8px;}
+.btn{display:inline-block;padding:12px 28px;font-weight:700;border-radius:8px;text-decoration:none;background:linear-gradient(90deg,#d4af37,#f1c40f);color:#000;transition:all 0.3s ease;font-size:0.9rem;}
+.btn:hover{box-shadow:0 0 15px #f1c40f;transform:scale(1.05);}
+.hero-image{flex:1;min-width:260px;}
+.hero-image img{width:100%;border-radius:12px;box-shadow:0 10px 30px rgba(212,175,55,0.5);transition:transform 0.4s ease;}
+.hero-image img:hover{transform:scale(1.05);}
+section{padding:60px 5%;opacity:0;transform:translateY(30px);transition:all 0.8s ease;}
+section.show{opacity:1;transform:translateY(0);}
+.services h2, .plan-section h2, .testimonials h2, .contact h2{font-size:2rem;text-align:center;background:linear-gradient(90deg,#d4af37,#f1c40f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:30px;}
+.service-grid, .plan-grid, .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;}
+.card, .plan-card, .testimonials-grid div{background:#1a1a1a;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(212,175,55,0.2);transition:all 0.4s ease;}
+.card:hover, .plan-card:hover, .testimonials-grid div:hover{transform:translateY(-5px) scale(1.03);box-shadow:0 10px 25px rgba(212,175,55,0.4);}
+.card img, .plan-card img{width:60px;margin-bottom:15px;}
+.plan-card.popular{background:linear-gradient(135deg,#d4af37,#f1c40f);color:#000;transform:scale(1.03);}
+.contact form{max-width:500px;margin:auto;display:flex;flex-direction:column;gap:15px;}
+.contact input,.contact textarea{padding:12px;border:none;border-radius:6px;}
+footer{padding:30px 5%;text-align:center;background:#0b0b0b;color:#777;font-size:0.85rem;}
+.whatsapp-btn{position:fixed;bottom:15px;right:15px;background:#25D366;color:#fff;width:50px;height:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:24px;box-shadow:0 5px 15px rgba(0,0,0,0.3);text-decoration:none;transition:0.3s;}
+.whatsapp-btn:hover{transform:scale(1.1);}
+@media(max-width:768px){.hero{flex-direction:column;text-align:center;}.hamburger{display:flex;}.menu{display:none;flex-direction:column;position:absolute;top:55px;right:5%;background:#111;padding:15px;border-radius:8px;gap:10px;}}
+html{scroll-behavior:smooth;}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>HERIO</h2>
+  <div class="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#planes">Planes</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+  <div class="hamburger"><div></div><div></div><div></div></div>
+</nav>
+
+<section class="hero" id="inicio">
+  <div class="hero-text">
+    <h1 class="typing"><span>HERIO</span> <span>Marketing</span> <span>Digital</span> <span>y</span> <span>Publicidad</span></h1>
+    <p>Diseño web profesional, posicionamiento SEO y publicidad online para aumentar tus ventas.</p>
+    <p>📱 Contacto: <a href="https://wa.me/34641905184" target="_blank" style="color:#f1c40f;text-decoration:none;">+34 641 905 184</a></p>
+    <a href="https://wa.me/34641905184" target="_blank" class="btn">Contactar Ahora</a>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=600&q=60" alt="Marketing Digital" loading="lazy">
+  </div>
+</section>
+
+<section class="services" id="servicios">
+  <h2>Nuestros Servicios</h2>
+  <div class="service-grid">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png" alt="Diseño Web" loading="lazy">
+      <h3>Diseño Web</h3>
+      <p>Webs modernas, rápidas y optimizadas para convertir visitantes en clientes.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" alt="SEO" loading="lazy">
+      <h3>SEO</h3>
+      <p>Posicionamos tu negocio en Google para atraer tráfico cualificado.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png" alt="Publicidad" loading="lazy">
+      <h3>Publicidad Online</h3>
+      <p>Campañas en Google Ads y redes sociales que generan resultados reales.</p>
+    </div>
+  </div>
+</section>
+
+<section class="plan-section" id="planes">
+  <h2>Nuestros Planes</h2>
+  <div class="plan-grid">
+    <div class="plan-card">
+      <h3>Plan Profesional</h3>
+      <p style="font-size:1.6rem;color:#d4af37;">Desde 499€</p>
+      <p>✔ Diseño Web Premium</p>
+      <p>✔ Optimización SEO</p>
+      <p>✔ Soporte 30 días</p>
+      <a href="https://wa.me/34641905184" target="_blank" class="btn">Elegir Plan</a>
+    </div>
+    <div class="plan-card popular">
+      <h3>Premium Plus</h3>
+      <p style="font-size:1.6rem;">Desde 899€</p>
+      <p>✔ Todo lo anterior</p>
+      <p>✔ Publicidad Online</p>
+      <p>✔ Estrategia completa</p>
+      <a href="https://wa.me/34641905184" target="_blank" class="btn" style="background:#000;color:#fff;">Más Popular</a>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2>Lo que dicen nuestros clientes</h2>
+  <div class="testimonials-grid">
+    <div><p>"Triplicamos nuestras ventas en 3 meses."</p><strong>- Empresa Local Madrid</strong></div>
+    <div><p>"Profesionalidad y resultados reales."</p><strong>- Tienda Online</strong></div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <h2>Solicita Información</h2>
+  <form id="whatsappForm">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <textarea id="proyecto" placeholder="Cuéntanos tu proyecto" rows="5" required></textarea>
+    <button type="submit" class="btn">Enviar Mensaje</button>
+  </form>
+</section>
+
+<footer>© 2026 HERIO - Todos los derechos reservados</footer>
+
+<a href="https://wa.me/34641905184" target="_blank" class="whatsapp-btn">💬</a>
+
+<script>
+window.addEventListener("load",()=>{
+document.body.style.opacity="1";
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');}});},{threshold:0.2});
+document.querySelectorAll('.hero-text,.hero-image,section,.card,.plan-card,.testimonials-grid div').forEach(el=>observer.observe(el));
+});
+document.getElementById('whatsappForm').addEventListener('submit',function(e){
+e.preventDefault();
+const nombre=document.getElementById('nombre').value;
+const email=document.getElementById('email').value;
+const proyecto=document.getElementById('proyecto').value;
+const mensaje=`Hola!%0ANombre: ${encodeURIComponent(nombre)}%0AEmail: ${encodeURIComponent(email)}%0AProyecto: ${encodeURIComponent(proyecto)}`;
+window.open(`https://wa.me/34641905184?text=${mensaje}`,'_blank');
+});
+const hamburger=document.querySelector('.hamburger');const menu=document.querySelector('nav .menu');hamburger.addEventListener('click',()=>{menu.style.display=menu.style.display==='flex'?'none':'flex';});
+</script>
+
+</body>
+</html>
